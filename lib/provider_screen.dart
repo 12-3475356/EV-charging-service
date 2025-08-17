@@ -41,7 +41,7 @@ class _EVProviderScreenState extends State<EVProviderScreen> {
 
     try {
       final response = await http.post(
-       Uri.parse("http://localhost:8081/api/person"), // for web
+       Uri.parse("http://192.168.15.143:8081/api/person"), // for web
         headers: {"Content-Type": "application/json"},
         body: jsonEncode(providerData),
       );
